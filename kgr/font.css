@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'S-Core';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: 100,200,300,400,500,600,700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TJ';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2') format('woff2');
+    font-weight: 100,300,400,500;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;500;600;700;800;900&family=Montserrat:wght@100;300;400;600&display=swap');
+
