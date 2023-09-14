@@ -49,17 +49,9 @@ $list_count = (is_array($list) && $list) ? count($list) : 0;
         
         pagination: {
             el: '.swiper<?php echo $bo_table; ?> .swiper-pagination',
+            clickable: true 
+
         },
 
-        // // Navigation arrows
-        // navigation: {
-        //     nextEl: '.swiper-button-next',
-        //     prevEl: '.swiper-button-prev',
-        // },
-
-        // And if we need scrollbar
-        // scrollbar: {
-        //     el: '.swiper-scrollbar',
-        // },
         });
 </script>

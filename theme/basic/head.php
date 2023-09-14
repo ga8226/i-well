@@ -9,14 +9,14 @@ include_once(G5_LIB_PATH.'/outlogin.lib.php');
 ?>
 
 <!-- 상단 시작 { -->
-<div id="hd" class="fixed-top  px-4  bg-white border-bottom">
+<div id="hd" class="fixed-top    ">
     <?php
     if(defined('_INDEX_')) { // index에서만 실행
         include G5_BBS_PATH.'/newwin.inc.php'; // 팝업레이어
     }
     ?>
     
-    <div id="hd_wrapper" class=" d-flex justify-content-between align-items-center mw-100 py-3">
+    <div id="hd_wrapper" class=" d-flex justify-content-between align-items-center mw-100 py-3 px-4  position-relative bg-white">
         <h1 id="logo">
             <a href="<?php echo G5_URL ?>">
             <?php echo latest('theme/fts','logo', 1 , 100); ?>
@@ -114,20 +114,23 @@ include_once(G5_LIB_PATH.'/outlogin.lib.php');
         </nav>      
         <ul class="hd_login d-flex">        
             <?php if ($is_member) {  ?>
-            <li><a href="<?php echo G5_BBS_URL ?>/member_confirm.php?url=<?php echo G5_BBS_URL ?>/register_form.php">정보수정</a></li>
-            <li><a href="<?php echo G5_BBS_URL ?>/logout.php">로그아웃</a></li>
-            <?php if ($is_admin) {  ?>
-            <li class="tnb_admin"><a href="<?php echo correct_goto_url(G5_ADMIN_URL); ?>">관리자</a></li>
+                
+                <li><a href="<?php echo G5_BBS_URL ?>/logout.php">로그아웃</a></li>
+                <li><a href="<?php echo G5_BBS_URL ?>/member_confirm.php?url=<?php echo G5_BBS_URL ?>/register_form.php">정보수정</a></li>
+              
+                <?php if ($is_admin) {  ?>
+                <li class="tnb_admin"><a href="<?php echo correct_goto_url(G5_ADMIN_URL); ?>">관리자</a></li>
             <?php }  ?>
             <?php } else {  ?>
-            <li><a href="<?php echo G5_BBS_URL ?>/register.php">회원가입</a></li>
             <li><a href="<?php echo G5_BBS_URL ?>/login.php">로그인</a></li>
+            <li><a href="<?php echo G5_BBS_URL ?>/register.php">회원가입</a></li>
+           
             <?php }  ?>
 
         </ul>
     </div>
 
-    <div class="bg-dark text-center mx-n4 py-2">
+    <div class="bg-dark text-center mx-n4 py-2 ad ">
         <?php echo latest('theme/notice_h','notice',1,100);?>
     </div>
     

@@ -6,19 +6,106 @@ body{
     max-width:1440px;
     margin: 0 auto;
 }
+.main_p{
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif !important;
+    letter-spacing: 0.3px;
+    font-weight: 600 !important;
+}
+.me_img img{
+    width: 326.5px;
+}
+.h4{
+    height: 40px;
+}
+
+.mainborder{
+    margin-top: 1px;
+    background-color: black;
+    height: 3px;
+}
+.main-a{
+    font-size: 13px;
+    font-family: "Montserrat",sans-serif !important;
+    color: #000000;
+}
+.main-a:hover{
+    text-decoration: none;
+    color: #000000;
+}
+
+.main_span{
+    border: 1px solid black;
+    border-radius: 100%;
+    background-color: #000000;
+    transition-property: border, background-color;
+    transition-duration: 2s , 2s;
+}
+.main_span:hover{
+    background-color: #f09f65;
+    border: 1px solid #f09f65;
+}
+.main_span i{
+    font-size: 20px;
+    color: white;
+}
+
 #hd {
     #logo {
 
     }
-    #gnb {
-        font-size: 1rem;
-        padding: 0;
-    }
+  
     .fa-bars:before{
         content: "\F479";
         font-family: bootstrap-icon !important;
+    }      
+    
+}
+#gnb_all_bg {
+    display:none;
+    width:100%;
+    height:100%;
+    position:fixed;
+    left:0;
+    top:0;
+    z-index:999
+}
+#gnb_all {
+    .gnb_al_li{
+    width: 100%;
+    padding: 20px 0px;
+    border-left: 1px solid #e7eeef;
+    text-align: center;
+        li{ 
+            a{
+            transition: 0.5s;
+            text-decoration: none;
+           
+        }
+        &:hover{
+           background-color: #f09f65;           
+           transition-timing-function: linear;
+           a{           
+                color:white;            
+           }
+        }
+        }
+        .gnb_al_a{
+            font-size:16px;
+            display:block;
+            position:relative;
+            margin-bottom: 15px;
+            font-weight:bold;
+        }
     }
+}
+
+
+#gnb {
+    font-size: 1rem;
+    padding: 0;
     .gnb_1dli{
+        font-size: 17px;
         position: relative;
         padding: 0 10px;
     } 
@@ -28,28 +115,17 @@ body{
         padding:0 15px;
         color:#080808;
         text-decoration:none;
-        // &:after{
-        //     content: "";
-        //     // transform: scaleX(1);
-        //     width: 100%;
-        //     display: block;
-        //     border-bottom: 1px solid #ff8a16;
-        //     transition: 0.5s;
-        // }
-        
-        
     }
     .gnb_2dul{
         position: absolute;
         overflow: hidden;
         height: 0;
         width: 10em;
-        top: 180%;
+        top: 173%;
         left: 0;
         right: 0;
         transition: 0.8s;
         background-color: white;
-        border-top: 1px solid black;
     }
     .gnb_1dli:hover .gnb_2dul{
         height: 11rem;
@@ -72,18 +148,57 @@ body{
             transition-timing-function: linear;
         }
     }
-    #gnb_all .gnb_al_li{
-        width: 100%;
-        padding: 20px 0px;
-        border-left: 1px solid #e7eeef;
-    }
+}
 
+.swiper-pagination-bullet{
+    width: 170px;
+    border: 1px solid #ff7928;
+    border-radius: 8px;
+    background-color: #f09f65;
+    transform:translate(-400px, -120px);
+    margin: 0 5px !important;
+}
+
+#bo_list_total{
+    display: none;
+}
+.pg_wrap{
+    padding: 15px 0;
+    list-style: none;
+    text-align: center;
+    border: 0;
+}
+
+.sub_title.p{
+    font-family: 'S-Core' !important;
+    font-size: 30px;
+    color: #333333;
+    font-weight: 600 !important;
+    text-align: center;
+    letter-spacing: -1.5px;
+    padding-top: 30px;
+}
+.new_icon{
+    display: none !important;
+}
+
+
+// scroll
+.scrolldown{
+    #hd{
+        #hd_wrapper{
+        z-index: 10000;
+        }
+        .ad{
+            transform: translateY(-100%);
+        }
+    }
 }
 
 footer{
     
     .supportBanner{
-        padding: 40px 0;
+        padding: 40px 0 0 0;
                 }
 
         #tap {
@@ -123,7 +238,7 @@ footer{
     
     .fourBanner{
         li.col{
-            padding: 20px 0;
+            padding: 20px 0 0;
             a{
                 text-decoration: none;
             }
@@ -170,7 +285,10 @@ footer{
         }
     }
     #ft-top{
-        padding: 10px 0;
+        padding: 10px 0;        
+        width: 1410px;
+        margin: 0 auto;
+
         li{
        font-size: 15px;
        padding: 0 15px 0 15px;
@@ -222,9 +340,19 @@ footer{
     right:2rem;
     bottom:2rem;
     z-index: 10000;
+    transform: translateX(200%);
+    transition: 0.5s;
 
 }
 }
+.scrolldown {
+    .quick_menu{
+       
+        transform: translateX(0);
+    }
+
+}
+
 
 .fa + .sound_only {
    
