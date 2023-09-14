@@ -10,7 +10,7 @@ $list_count = (is_array($list) && $list) ? count($list) : 0;
     <div class="h4 d-flex justify-content-between">
         <p class="main_p"><?php echo $bo_subject; ?></p>
        <span>
-        <a href="http://ga8226.dothome.co.kr/bbs/board.php?bo_table=event_gallery" class="main-a">
+        <a href="" class="main-a">
             MORE VIEW
             <span class="main_span"><i class="bi bi-arrow-right-short"></i></span>
         </a>
@@ -34,19 +34,18 @@ $list_count = (is_array($list) && $list) ? count($list) : 0;
         $img_content = '<img src="'.$img.'" alt="'.$thumb['alt'].'" class="d-block" >';
         $wr_href = get_pretty_url($bo_table, $list[$i]['wr_id']);
         ?>
-          <div class="swiper-slide">
-                <a href="<?php echo $wr_href; ?>" class="me_img">
+            <div class="swiper-slide">
+                <a href="<?php echo $wr_href; ?>" class="me_collaboimg">
                 <?php echo run_replace('thumb_image_tag', $img_content, $thumb);?>
                 </a>
-                <div class="main_t">
+               <div class="main_tc">
                 <a href="">
                     <p>
                         <?php echo  $list[$i]['subject']?>
                     </p>
                 </a>
+               </div>
             </div>
-         </div>
-            
     <?php }  ?>
     <?php if ($list_count == 0) { //게시물이 없을 때  ?>
         <div class="empty_li">게시물이 없습니다.</div>
@@ -60,16 +59,12 @@ $list_count = (is_array($list) && $list) ? count($list) : 0;
     var  swiper<?php echo $bo_table; ?> = new Swiper(".swiper<?php echo $bo_table; ?>"
   , {
       loop: true,
-      slidesPerView: 4,
+      slidesPerView: 6,
       spaceBetween: 30,
       freeMode: true,
       autoplay: {
             delay: 2000,
             disableOnInteraction: false,
-        },
-      pagination: {
-        el: ".swiper<?php echo $bo_table; ?> .swiper-pagination",
-        clickable: true,
-      },
+        }  
     });
   </script>

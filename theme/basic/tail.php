@@ -18,7 +18,7 @@ if (G5_IS_MOBILE) {
 <hr>
 
 <!-- 하단 시작 { -->
-<footer>
+<footer class="mt8">
 <div class="supportBanner">
     <div>
          <div class="container-garim">
@@ -44,8 +44,6 @@ if (G5_IS_MOBILE) {
     <?php echo latest('theme/ft4','ft_banner', 4 , 100); ?>
 
 </div>
-
-
 
 <div id="ft" class="border-top">
     <div id="ft-top wrap" class="bg-white border-bottom py-2">

@@ -6,6 +6,9 @@ body{
     max-width:1440px;
     margin: 0 auto;
 }
+.mt8{
+    margin-top: 80px;
+}
 .main_p{
     font-size: 25px;
     font-family: 'Montserrat', sans-serif !important;
@@ -14,6 +17,11 @@ body{
 }
 .me_img img{
     width: 326.5px;
+}
+.me_collaboimg img{
+    width: 210px;
+    border: 1px solid black;
+    border-radius: 5px;
 }
 .h4{
     height: 40px;
@@ -48,6 +56,29 @@ body{
 .main_span i{
     font-size: 20px;
     color: white;
+}
+.main_t{
+    margin: 20px 0;
+    text-align: center;
+    p{
+        font-size: 14px;
+        font-weight: bold;
+    }
+}
+.main_t a:hover{
+    text-decoration: none;
+    color: #000000;
+}
+.main_tc{
+    margin: 20px 0;
+    p{
+        font-size: 14px;
+        font-weight: bold;
+    }
+}
+.main_tc a:hover{
+    text-decoration: none;
+    color: #000000;
 }
 
 #hd {
@@ -96,6 +127,11 @@ body{
             position:relative;
             margin-bottom: 15px;
             font-weight:bold;
+            &:hover{
+                color: #f09f65;
+                text-decoration: none;
+                transition: 0.5s;
+            }
         }
     }
 }
