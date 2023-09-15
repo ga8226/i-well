@@ -9,6 +9,28 @@ body{
 .mt8{
     margin-top: 80px;
 }
+
+.event_banner_title{
+    font-size: 65px;
+    color: white;
+    letter-spacing: -5px;
+    line-height: 70px;
+    font-weight: 600 ;
+    padding-bottom: 35px;
+    padding-top: 24px;
+    text-align: center;
+}
+.event_intro_t{
+    font-size: 18px;
+    color: #fff;
+    letter-spacing: -0.8px;
+    line-height: 30px;
+    text-align: center;
+    font-weight: 600;
+}
+.evbox1{
+    transform: translate(110px, 100px);
+}
 .main_p{
     font-size: 25px;
     font-family: 'Montserrat', sans-serif !important;
@@ -80,6 +102,20 @@ body{
     text-decoration: none;
     color: #000000;
 }
+.inner{
+    display: flex;
+    background-color: #ffb85d;
+    justify-content: center;
+    img.event1{
+        width: 700px;
+        height: 61px;
+    }
+    img.eventbox{
+        width: 700px;
+        height: 500px;
+    }
+}
+
 
 #hd {
     #logo {
@@ -414,4 +450,23 @@ footer{
     .gnb_al_li:not(.all){
         display: none !important;
     }
+}
+
+.boardpage{
+    .supportBanner > div >
+    .container-garim , .fourBanner{
+        display: none !important;
+    }
+    .container-lg{
+        width:auto !important;
+        max-width:none !important;
+        .sub_title + div,
+        > div:nth-child(3),
+        > [style='width:100%']{
+            max-width:1280px;
+            margin: 0 auto;
+    
+        }
+    }
+   
 }
