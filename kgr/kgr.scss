@@ -121,13 +121,15 @@ body{
     #logo {
 
     }
-  
+   
+
     .fa-bars:before{
         content: "\F479";
         font-family: bootstrap-icon !important;
     }      
     
 }
+
 #gnb_all_bg {
     display:none;
     width:100%;
@@ -218,6 +220,16 @@ body{
         &:hover{
             color: white;
             transition-timing-function: linear;
+        }
+    }
+    .gnb_1dli button.gnb_menu_btn{
+        border: none;
+        background-color: white;
+    
+        i{font-size: 20px;}
+        span{
+        font-family: 'S-Core';
+        font-weight: 600;
         }
     }
 }

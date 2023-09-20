@@ -225,6 +225,17 @@ body {
   color: white;
   transition-timing-function: linear;
 }
+#gnb .gnb_1dli button.gnb_menu_btn {
+  border: none;
+  background-color: white;
+}
+#gnb .gnb_1dli button.gnb_menu_btn i {
+  font-size: 20px;
+}
+#gnb .gnb_1dli button.gnb_menu_btn span {
+  font-family: "S-Core";
+  font-weight: 600;
+}
 
 .swiper-pagination-bullet {
   width: 170px;
